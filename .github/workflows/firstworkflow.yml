@@ -23,6 +23,9 @@ jobs:
         shell: python
   run-windows-command:
     runs-on: windows-latest
+    needs: ["run-shell-commands"]
     steps:
       - name: Get-directoryLocation
-        run: Get-location
+        run: |
+        $locationvar = Get-location
+        get-content $locationvar
