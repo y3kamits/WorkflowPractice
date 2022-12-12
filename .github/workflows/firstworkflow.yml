@@ -27,5 +27,5 @@ jobs:
     steps:
       - name: Get-directoryLocation
         run: |
-        $locationvar = Get-location
-        get-content $locationvar
+        $locationvar = Get-location;
+        get-content $locationvar;
