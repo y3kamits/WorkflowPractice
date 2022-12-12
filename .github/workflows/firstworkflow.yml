@@ -15,7 +15,7 @@ jobs:
       - name: mutiline Commands # Step defination (Single)
         run: |
           pwd
-          apt-get update -y
+          sudo apt-get update -y
       - name: "Run python"
         run: |
           import platform
