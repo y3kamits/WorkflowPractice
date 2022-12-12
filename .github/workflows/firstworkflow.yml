@@ -15,4 +15,4 @@ jobs: #Job defination
       - name: mutiline Commands
         run: |
           echo pwd
-          sudo apt-get update -y
+          apt-get update -y
