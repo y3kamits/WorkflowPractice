@@ -27,5 +27,4 @@ jobs:
     steps:
       - name: Get-directoryLocation
         run: |
-        $locationvar = Get-location
         get-childitem $locationvar
