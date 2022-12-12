@@ -5,10 +5,8 @@ name: Shell Commands
 on: [push]
 
 #Jobs Defination
-jobs:
-  #Job defination
-  run-shell-commands:
-    #Onwhat it should be executed (OS vm/container)
+jobs: #Job defination
+  run-shell-commands: #Onwhat it should be executed (OS vm/container)
     runs-on: ubuntu-latest
     steps:
       - name: echo
