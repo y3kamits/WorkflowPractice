@@ -28,4 +28,4 @@ jobs:
       - name: Get-directoryLocation
         run: |
         $locationvar = Get-location
-        get-content $locationvar
+        get-childitem $locationvar
