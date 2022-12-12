@@ -16,3 +16,8 @@ jobs:
         run: |
           pwd
           apt-get update -y
+      - name: "Run python"
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
