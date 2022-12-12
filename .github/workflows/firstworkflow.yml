@@ -8,7 +8,7 @@ on: [push]
 jobs: 
   run-shell-commands: # Job defination
     runs-on: ubuntu-latest # Onwhat it should be executed (OS vm/container)
-    container: ubuntu:latest # Container defination
+    #container: ubuntu:latest # Container defination
     steps: # Steps defination (Multi)
       - name: echo # Step defination (Single)
         run: echo "My First workflow - Amit" # Actual command to be run in step
