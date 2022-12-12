@@ -1,0 +1,19 @@
+#Name of workflow
+name: Shell Commands
+
+#Trigger event
+on: [push]
+
+#Jobs Defination
+jobs:
+  #Job defination
+  run-shell-commands:
+    #Onwhat it should be executed (OS vm/container)
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "My First workflow - Amit"
+      - name: mutiline Commands
+        run: |
+          echo pwd
+          apt-get update -y
