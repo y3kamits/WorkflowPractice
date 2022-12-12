@@ -14,5 +14,5 @@ jobs:
         run: echo "My First workflow - Amit" # Actual command to be run in step
       - name: mutiline Commands # Step defination (Single)
         run: |
-          echo pwd
+          pwd
           apt-get update -y
