@@ -9,12 +9,12 @@ jobs:
     steps:
       - name: List files
         run:  |
-        echo $GITHUB_REPOSITORY
-        echo $GITHUB_SHA
-        ehco "${{ github.token}}"
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_SHA
+          ehco "${{ github.token}}"
       - name: Checkout
         uses: actions/checkout@v1
       - name: Listing aftet checkout
         run:  |
-        pwd
-        ls -altr
+          pwd
+          ls -altr
