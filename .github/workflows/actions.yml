@@ -9,7 +9,6 @@ jobs:
     steps:
       - name: List files
         run:  |
-        pwd
         echo $GITHUB_REPOSITORY
         echo $GITHUB_SHA
         ehco "${{ github.token}}"
