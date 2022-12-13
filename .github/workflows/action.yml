@@ -1,0 +1,21 @@
+# Name of action
+name: Action Test
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files
+        run:  |
+        pwd
+        echo $GITHUB_REPOSITORY
+        echo $GITHUB_SHA
+        ehco "${{ github.token}}"
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Listing aftet checkout
+        run:  |
+        pwd
+        ls -altr

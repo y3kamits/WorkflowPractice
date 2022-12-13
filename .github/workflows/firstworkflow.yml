@@ -26,4 +26,4 @@ jobs:
     needs: ["run-shell-commands"]
     steps:
       - name: Get-directoryLocation
-        run: get-childitem
+        run: get-location
